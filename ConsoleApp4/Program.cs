@@ -45,18 +45,18 @@ for (x = 1; x < 5; x++)
 {
     Console.Write(x.ToString());
     Console.Write(". kişinin yaşı? ");
-    nYas[x-1] = sbyte.Parse(Console.ReadLine());
+    nYas[x - 1] = sbyte.Parse(Console.ReadLine());
 }
-for (x = 1;x < 5; x++)
+for (x = 1; x < 5; x++)
 {
-    if (nYas[x-1] >= 60 && iseGirisYili <= 2008 && primGun <=7000)
+    if (nYas[x - 1] >= 60 && iseGirisYili <= 2008 && primGun <= 7000 && primGun>=4500)
     {
         Console.Write(x.ToString());
         Console.WriteLine(". kişi emekli olabilir");
     }
-    else 
-    { 
-        Console.Write(x.ToString()); 
+    else
+    {
+        Console.Write(x.ToString());
         Console.WriteLine(". kişi emekli olamaz");
     }
 }
